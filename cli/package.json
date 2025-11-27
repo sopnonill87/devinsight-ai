@@ -1,0 +1,11 @@
+{
+    "name": "devinsight-cli",
+    "version": "0.1.0",
+    "bin": {
+        "devinsight": "./bin/devinsight-cli.js"
+    },
+    "type": "module",
+    "dependencies": {
+        "node-fetch": "^3.3.2"
+    }
+}

@@ -1,0 +1,30 @@
+name: DevInsight Code Analysis
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install DevInsight CLI
+        run: |
+          npm install -g devinsight-cli || echo "Install your CLI from npm when published"
+
+      - name: Run DevInsight on sample file
+        env:
+          DEVINSIGHT_API_URL: ${{ secrets.DEVINSIGHT_API_URL }}
+        run: |
+          echo "Running DevInsight analysis..."
+          devinsight analyze src/index.js JavaScript || echo "Adjust path to your project entry"

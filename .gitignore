@@ -1,0 +1,75 @@
+# ─────────────────────────────────────────
+# Node Modules
+# ─────────────────────────────────────────
+node_modules/
+cli/node_modules/
+
+# ─────────────────────────────────────────
+# Environment Files (DO NOT COMMIT SECRETS)
+# ─────────────────────────────────────────
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ─────────────────────────────────────────
+# Next.js build output
+# ─────────────────────────────────────────
+.next/
+out/
+dist/
+
+# ─────────────────────────────────────────
+# Vercel build files
+# ─────────────────────────────────────────
+.vercel/
+
+# ─────────────────────────────────────────
+# Logs
+# ─────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Logs folder
+logs/
+*.log
+
+# ─────────────────────────────────────────
+# Temp files
+# ─────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ─────────────────────────────────────────
+# OS / Editor junk
+# ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────
+# TypeScript
+# ─────────────────────────────────────────
+*.tsbuildinfo
+
+# ─────────────────────────────────────────
+# CLI build artifacts (if later built)
+# ─────────────────────────────────────────
+cli/dist/
+cli/build/
+
+# ─────────────────────────────────────────
+# Coverage reports (if you add test runners)
+# ─────────────────────────────────────────
+coverage/
+
+# ─────────────────────────────────────────
+# VSCode local settings
+# ─────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
