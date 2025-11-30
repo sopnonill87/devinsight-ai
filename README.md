@@ -42,7 +42,7 @@ Automatically generates tests for:
 | PHP | PHPUnit |
 | Python | PyTest |
 
-Covers:
+This Covers:
 - Happy paths  
 - Edge cases  
 - Error conditions  
