@@ -15,9 +15,9 @@ It includes:
 - 🧰 **CLI tool** for local workflows  
 - 🟦 **GitHub Action** integration  
 - ⚡ **Next.js frontend** for interactive usage  
-<!--- ☁️ **Vercel serverless backend**  -->
+☁️ **Vercel serverless backend** 
 
-👉 **Live App:** http://localhost:3000 
+👉 **Live App:** https://devinsight-6tkmxpgut-noni-gopal-sutradhars-projects.vercel.app/
 👉 **API-powered CLI:** in `/cli`  
 👉 **Documentation:** in `/docs`
 
