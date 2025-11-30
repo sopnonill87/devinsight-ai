@@ -17,7 +17,7 @@ It includes:
 - ⚡ **Next.js frontend** for interactive usage  
 - ☁️ **Vercel serverless backend**  
 
-👉 **Live App:** https://your-vercel-url.vercel.app  
+👉 **Live App:** http://localhost:3000 
 👉 **API-powered CLI:** in `/cli`  
 👉 **Documentation:** in `/docs`
 
