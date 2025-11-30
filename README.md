@@ -15,7 +15,7 @@ It includes:
 - 🧰 **CLI tool** for local workflows  
 - 🟦 **GitHub Action** integration  
 - ⚡ **Next.js frontend** for interactive usage  
-- ☁️ **Vercel serverless backend**  
+<!--- ☁️ **Vercel serverless backend**  -->
 
 👉 **Live App:** http://localhost:3000 
 👉 **API-powered CLI:** in `/cli`  
