@@ -18,13 +18,32 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install DevInsight CLI
+      # (Optional) Install root deps - not strictly needed for CLI-only
+      - name: Install root dependencies
         run: |
-          npm install -g devinsight-cli || echo "Install your CLI from npm when published"
+          npm install
 
-      - name: Run DevInsight on sample file
+      - name: Run DevInsight CLI (JavaScript file)
         env:
           DEVINSIGHT_API_URL: ${{ secrets.DEVINSIGHT_API_URL }}
         run: |
-          echo "Running DevInsight analysis..."
-          devinsight analyze src/index.js JavaScript || echo "Adjust path to your project entry"
+          cd cli
+          node devinsight.js analyze ../test.js JavaScript || echo "Adjust path to your JS file"
+
+      # Example: Run on PHP file
+      - name: Run DevInsight CLI (PHP file)
+        if: false # set to true or remove this line when you have a PHP file to test
+        env:
+          DEVINSIGHT_API_URL: ${{ secrets.DEVINSIGHT_API_URL }}
+        run: |
+          cd cli
+          node devinsight.js analyze ../test.php PHP || echo "Adjust path to your PHP file"
+
+      # Example: Run on Python file
+      - name: Run DevInsight CLI (Python file)
+        if: false # set to true or remove when you use it
+        env:
+          DEVINSIGHT_API_URL: ${{ secrets.DEVINSIGHT_API_URL }}
+        run: |
+          cd cli
+          node devinsight.js analyze ../test.py Python || echo "Adjust path to your Python file"
