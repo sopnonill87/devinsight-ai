@@ -1,51 +1,63 @@
 # 🚀 DevInsight AI  
-**AI-powered code analysis and unit test generation for developers**
+**AI-powered code analysis and automated unit test generation.**
 
-DevInsight AI is a lightweight, open-source developer tool that uses LLMs to:
-- 🔍 Analyze code for issues, smells, and improvements  
-- 🧪 Generate unit tests automatically  
-- 📊 Provide actionable insights for better code quality  
-- 🛠 Offer a CLI for local workflows  
-- 🟦 Provide an API that integrates with GitHub Actions  
+DevInsight AI is a full-stack developer productivity tool powered by AI.  
+It analyzes code, detects issues, suggests improvements, and generates unit tests for:
 
-This project was built in 20 days as a powerful developer productivity tool using:
-- Next.js (full stack)
-- OpenAI LLMs
-- Node.js CLI
-- Vercel Serverless Functions
+- **JavaScript (Jest)**
+- **PHP (PHPUnit)**
+- **Python (PyTest)**
 
- 👉 **Live App:** https://devinsight-ai.vercel.app  
- 👉 **CLI:** (to be published on npm)  
- 👉 **Documentation:** See below  
+It includes:
+
+- 🔍 **Code analysis API**  
+- 🧪 **Unit test generation API**  
+- 🧰 **CLI tool** for local workflows  
+- 🟦 **GitHub Action** integration  
+- ⚡ **Next.js frontend** for interactive usage  
+- ☁️ **Vercel serverless backend**  
+
+👉 **Live App:** https://your-vercel-url.vercel.app  
+👉 **API-powered CLI:** in `/cli`  
+👉 **Documentation:** in `/docs`
 
 ---
 
 ## ✨ Features
 
-### 🔍 Code Analysis  
-Paste your code → DevInsight AI returns:
-- Bugs & vulnerabilities  
-- Code smells  
-- Readability issues  
-- Maintainability risks  
-- Suggested refactors  
-- Best-practice recommendations  
+### 🔍 Code Analysis
+- Detect bugs  
+- Detect code smells  
+- Identify security issues  
+- Find performance problems  
+- Suggest clean, maintainable refactors  
+- Works for JS, PHP, Python  
 
-### 🧪 Unit Test Generator  
-Supports:
-- **Jest (JS/TS)**  
-- **PHPUnit (PHP)**  
-- **PyTest (Python)**  
+### 🧪 Unit Test Generator
+Automatically generates tests for:
 
-The AI creates:
-- Happy path tests  
+| Language | Framework |
+|----------|------------|
+| JavaScript | Jest |
+| PHP | PHPUnit |
+| Python | PyTest |
+
+Covers:
+- Happy paths  
 - Edge cases  
-- Negative cases  
-- Simple, readable test names  
+- Error conditions  
+- Input validation  
 
-### 🧰 DevInsight CLI  
-Run DevInsight from your terminal:
+### 🧰 CLI Tool
+Run DevInsight directly from your terminal.
+
+Examples:
 
 ```bash
-devinsight analyze src/index.js JavaScript
-devinsight tests app/Service.php PHP
+node devinsight.js tests ../test.js JavaScript
+node devinsight.js tests ../test.php PHP
+node devinsight.js tests ../test.py Python
+
+node devinsight.js analyze ../test.js JavaScript
+node devinsight.js analyze ../test.php PHP
+node devinsight.js analyze ../test.py Python
