@@ -41,7 +41,6 @@ The architecture is designed to:
 - Support multiple programming languages and frameworks
 - Enable future extensions without architectural rewrites
 
-*(Architecture diagram can be found in the documentation.)*
 ![Architecture Diagram](./img/devinsight.png "System Architecture")
 
 ---
